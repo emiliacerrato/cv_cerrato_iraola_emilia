@@ -11,15 +11,18 @@ h1 {
     font-size: 4rem;
     font-weight: 700;
     color: rgb(3, 3, 98);
+    line-height: 2vh;
 }
 
 h2 {
+    line-height: 3vh;
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 2rem;
     color: rgb(3, 3, 98)
 }    
 
 h3 {
+    line-height: 4vh;
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 1.5rem;
     color: rgb(3, 3, 98);
@@ -60,12 +63,16 @@ nav {
     background-color: rgba(3, 3, 98, 0.478);
     border-radius: 20px;
     height: 95vh;
-    width: 40vh;
-    padding: 30px;
+    width: 20vw;
+    padding: 35px;
 }
 
 #informacion {
     padding-left: 45px;
     border: 0;
     height: 95vh;
+}
+
+.bloque {
+    line-height: 2.5vh;
 }
