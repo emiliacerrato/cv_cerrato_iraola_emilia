@@ -4,6 +4,8 @@
     font-family: "DM Dans", sans-serif ;
     text-wrap: balance;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -11,18 +13,18 @@ h1 {
     font-size: 4rem;
     font-weight: 700;
     color: rgb(3, 3, 98);
-    line-height: 2vh;
+    line-height: 3rem;
 }
 
 h2 {
-    line-height: 3vh;
+    line-height: 4rem;
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 2rem;
     color: rgb(3, 3, 98)
 }    
 
 h3 {
-    line-height: 4vh;
+    line-height: 4rem;
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 1.5rem;
     color: rgb(3, 3, 98);
@@ -35,44 +37,89 @@ h4 {
 
 p {
     font-family: "DM sans", sans-serif;
-    font-size: 13px;
+    font-size: 0,5rem;
 }
 
-ul {
+li {
     font-family: "DM sans", sans-serif;
-    font-size: 13px;
+    font-size: 0,5rem;
+    line-height: 1.7rem;
 }
 
 nav {
     background-color: rgb(3, 3, 98);
-    height: 8vh;
+    height: 10vh;
     padding: 15px;
-    border: 0;
-    margin-bottom: 15px;
+    margin: 10px;
     border-radius: 20px;
     display: flex; justify-content: space-evenly;
     align-items: center;
 }
 
+a {
+    font-family: "DM Sans", sans-serif;
+}
+
 #cuerpo { 
     display: flex; justify-content: left;
-
+    padding: 10px;
 }
 
 #sobre-mi {
-    background-color: rgba(3, 3, 98, 0.478);
+    background-color: rgba(3, 3, 98, 0.423);
     border-radius: 20px;
-    height: 95vh;
-    width: 20vw;
+    height: 103vh;
+    width: 25vw;
     padding: 35px;
 }
 
+img {
+    margin: 15px;
+}
+
 #informacion {
-    padding-left: 45px;
+    padding: 40px;
+    padding-left: 50px;
     border: 0;
     height: 95vh;
+    background-color: rgba(3, 3, 98, 0.118);
+    border-radius: 20px;
+    margin-left: 20px;
+    width: 1200px;
+    height: 103vh;
 }
 
 .bloque {
-    line-height: 2.5vh;
+    line-height: 2rem;
+}
+
+footer { 
+    height: 10vh;
+    background-color: rgba(67, 67, 120, 0.478);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+    display: flex; justify-content: space-evenly;
+    align-items: center;
+}
+
+#trabajos {
+    background-color: rgba(3, 3, 98, 0.118);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    height: 70vh;
+}
+
+#columnas {
+    display: flex; justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.fotos {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
 }
