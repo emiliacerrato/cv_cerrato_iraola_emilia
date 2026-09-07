@@ -20,14 +20,15 @@ h2 {
     line-height: 4rem;
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 2rem;
-    color: rgb(3, 3, 98)
+    color: rgb(3, 3, 98);
 }    
 
 h3 {
-    line-height: 4rem;
+    line-height: 2rem;
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 1.5rem;
     color: rgb(3, 3, 98);
+    margin-top: 20px;
 }
 
 h4 {
@@ -47,7 +48,7 @@ li {
 }
 
 nav {
-    background-color: rgb(3, 3, 98);
+    background-color: rgba(3, 3, 98, 0.514);
     height: 10vh;
     padding: 15px;
     margin: 10px;
@@ -58,6 +59,8 @@ nav {
 
 a {
     font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    color: rgb(3, 3, 98);
 }
 
 #cuerpo { 
@@ -68,7 +71,7 @@ a {
 #sobre-mi {
     background-color: rgba(3, 3, 98, 0.423);
     border-radius: 20px;
-    height: 103vh;
+    height: 106vh;
     width: 25vw;
     padding: 35px;
 }
@@ -86,11 +89,7 @@ img {
     border-radius: 20px;
     margin-left: 20px;
     width: 1200px;
-    height: 103vh;
-}
-
-.bloque {
-    line-height: 2rem;
+    height: 106vh;
 }
 
 footer { 
@@ -123,3 +122,10 @@ footer {
     padding: 15px;
     margin: 10px;
 }
+
+.bloques {
+    line-height: 2rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
