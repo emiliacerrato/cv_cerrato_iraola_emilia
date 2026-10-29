@@ -4,88 +4,113 @@
 
 /* Generales */
 
-h1 {
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.estilo-uno {
     color: #436EB3;
     font-size: 8rem;
     font-family: 'Boldonse', system-ui;
-    margin: 0px;
-    padding: 0px;
     line-height: 1;
 }
 
-h2 {
+.estilo-dos {
     font-size: 5rem;
     font-weight: 300;
     font-family: 'Alegreya Sans';
-    margin: 0px;
-    padding: 0px;
     color: #E63F20;
     line-height: 0.6;
 }
 
-h3 {
-    font-size: 3rem;
+.estilo-tres {
+    font-size: 4rem;
     font-weight: bold;
     font-family: 'Alegreya Sans';
-    color: #436EB3;
-    margin: 0px;
-    padding: 0px;
+    color: #E765A2;
+    line-height: 1;
 }
 
-h4 {
+.estilo-cuatro {
     font-size: 3rem;
     font-weight: 300;
     font-family: 'Alegreya Sans';
     color: #436EB3;
-    margin: 0px;
-    padding: 0px;
 }
 
-h5 {
-    font-size: 2,2rem;
+.estilo-cinco {
+    font-size: 2rem;
     font-weight: bold;
     font-family: 'Alegreya Sans';
     color: #436EB3;
-    margin: 0px;
-    padding: 0px;
 }
 
-h6 {
+.estilo-seis {
     font-size: 1rem;
     font-family: 'Alegreya Sans';
     font-weight: 400;
     font-style: italic;
-    margin: 0px;
-    padding: 0px;
     color: #E63F20;
 }
 
-h7 {
-    font-size: 1,5rem;
+.estilo-siete {
+    font-size: 1rem;
     font-family: 'Alegreya Sans';
     font-weight: 800;
-    margin: 0px;
-    padding: 0px;
+    color: #436EB3;
 }
 
 p {
-    font-size: 1,5rem;
+    font-size: 1rem;
     font-family: 'Alegreya Sans';
-    margin: 0px;
-    padding: 0px;
 }
 
 .botones {
-    font-size: 1,5rem;
+    font-size: 1rem;
     font-family: 'Alegreya Sans';
     font-weight: bold;
-    margin: 0px;
     padding: 15px 30px;
     border-radius: 50px;
     text-decoration: none;
     color: white;
     background-color: #F59E21;
 }
+
+
+/* Footer */
+
+footer {
+    background-color: #F0EEE2;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contenido-footer {
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#derechos-emilia {
+    margin-left: 60px;
+}
+
+#info-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-right: 60px;
+}
+
+.bloquecitos-info {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Header y navegador */
 
@@ -132,9 +157,10 @@ header {
 
 #fotonav {
     margin-left: 60px;
-    display: flex;
-    align-items: center;
 }
+
+
+/* index */
 
 
 /* Hero home */
@@ -145,7 +171,6 @@ header {
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: auto 95%;
-    margin: 0px;
     padding: 15px;
     display: flex; 
     align-items: center;
@@ -195,7 +220,9 @@ header {
 
 .desplegable-abierto {
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
+    margin-right: 60px;
+    margin-left: 60px;
     align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -206,7 +233,6 @@ header {
 
 #softwares {
     background-color: #FAE0EC;
-    margin: 0px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -226,8 +252,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 0px;
-    margin: 0px;
 }
 
 
@@ -235,7 +259,6 @@ header {
 
 #habilidades {
     background-color: #D1E1D5;
-    margin: 0px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -264,53 +287,212 @@ header {
 #mis-trabajos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.mantener-altura {
+    height: fit-content;
+    width: fit-content;
 }
 
 #info-mis-trabajos {
     margin-left: 60px;
+    height: 30vh;
     width: 20vw;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #fotos-trabajos-home {
-    margin-right: 60px;
+    margin-right: 80px;
     display: flex;
     gap: 35px;
 }
 
 
-/* Footer */
+/* hablemos! */
 
-footer {
-    background-color: #F0EEE2;
-    height: 20vh;
-    margin-top: 60px;
+/* Página general */
+
+#fondo-forms {
+    margin: 5px;
+    background-image: url(img/formulario/fondoforms.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#contenido-footer {
+
+/* Formulario */
+
+form {
+    background-color: #FAE0EC;
+    height: 58vh;
+    width: 55vw;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+#campos-completar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 40px;
+}
+
+.columnas-forms {
+    width: 50%;
+    height: auto;
+}
+
+input {
+    width: 80%;
+    height: 35px;
+    background-color: #FCFBF6;
+    border: none;
+    border-radius: 20px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    font-family: "Alegreya Sans";
+    font-size: 1rem;
+}
+
+input [type=checkbox] {
+    width: auto;
+    height: auto;
+}
+
+textarea {
+    background-color: #FCFBF6;
+    border: none;
+    border-radius: 20px;
+    height: 23vh;
+    width: 95%;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+label {
+    display: block;
+    height: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Alegreya Sans';
+    color: #436EB3;
+    margin-left: 15px;
+}
+
+.mayusculas {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+
+/* Mis trabajos */
+
+#trabajos-principales {
+    height: 55vh;
     margin-left: 60px;
     margin-right: 60px;
+    padding-top: 40px;
+}
+
+.img-trabajos {
+    background-color: #DDF0FA;
+    padding: 18px;
+    border-radius: 25px;
+}
+
+#fotos-trabajos {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
-#derechos-emilia {
-}
-
-#info-footer {
+.trabajo-desplegado-con-galeria {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 65px;
+    gap: 50px;
 }
 
-#seguime {
+.info-galeria {
+    width: 55%;
+}
+
+.galería {
+
+}
+
+/* Galerías aparte */
+
+.trabajo-especifico {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+.descripcion-trabajo {
+    width: 35%;
     display: flex;
     flex-direction: column;
 }
 
-#contacto {
+.distanciar {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+
+/* Curriculum */
+
+#curriculum {
+    display: flex;
+    margin-right: 80px;
+}
+
+#cv-izquierda {
+    width: 15%;
+    height: auto;
+    background-color: #f7f6ef;
+    padding: 60px;
     display: flex;
     flex-direction: column;
+}
+
+#cv-derecha {
+    padding: 60px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listas {
+    font-family: "Alegreya Sans";
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#encabezado {
+    margin-bottom: 30px;
+}
+
+.bloquecito-cv {
+    margin-top: 30px;
 }
