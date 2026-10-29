@@ -61,6 +61,13 @@
     color: #436EB3;
 }
 
+.estilo-ocho {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Alegreya Sans';
+    color: white;
+}
+
 p {
     font-size: 1rem;
     font-family: 'Alegreya Sans';
@@ -75,6 +82,13 @@ p {
     text-decoration: none;
     color: white;
     background-color: #F59E21;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botones:hover {
+    background-color: #e63f20;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -281,6 +295,14 @@ header {
     align-items: center;
 }
 
+details summary img {
+    transition: transform 0.3s ease;
+}
+
+details[open] summary img {
+    transform: rotate(180deg);
+}
+
 
 /* Mis trabajos home */
 
@@ -295,6 +317,7 @@ header {
 .mantener-altura {
     height: fit-content;
     width: fit-content;
+    margin-top: 30px;
 }
 
 #info-mis-trabajos {
@@ -312,6 +335,16 @@ header {
     gap: 35px;
 }
 
+#fotos-trabajos-home img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+#fotos-trabajos-home img:hover {
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
 
 /* hablemos! */
 
@@ -374,7 +407,6 @@ textarea {
     border-radius: 20px;
     height: 23vh;
     width: 95%;
-    margin-bottom: 25px;
     padding: 15px;
 }
 
@@ -395,6 +427,7 @@ label {
 
 
 /* Mis trabajos */
+/* Primera parte */
 
 #trabajos-principales {
     height: 55vh;
@@ -419,21 +452,107 @@ label {
     margin-bottom: 60px;
 }
 
+.trabajo {
+    position: relative;
+}
+
+.trabajo .img-trabajos {
+    display: block;
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 25px;
+    background-color: #F59E21;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.trabajo:hover .hover {
+    opacity: 1;
+}
+
+/* Segunda parte*/
+
 .trabajo-desplegado-con-galeria {
     display: flex;
     margin-left: 60px;
     margin-right: 60px;
     margin-top: 65px;
     gap: 50px;
+    align-items: center;
 }
 
 .info-galeria {
-    width: 55%;
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.galería {
-
+#galeria-museo {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    margin-left: 25px;
 }
+
+#imagen-grande-museo {
+    grid-column: 1;
+    grid-row: 2 / 4;
+}
+
+#entradas-museo {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#galeria-exlibris {
+    display: grid;
+    grid-template-columns: 323px 285px 323px;
+    grid-template-rows: repeat(2, 247px);
+    gap: 10px;
+}
+
+#galeria-un-vuelo {
+    display: grid;
+    grid-template-columns: repeat(3, 310px);
+    grid-template-rows: repeat(2, 226px);
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+#video {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  object-fit: cover;
+}
+
+#galeria-museo img,
+#galeria-exlibris img,
+#galeria-un-vuelo img {
+    transition: transform 0.3s ease;
+}
+
+#galeria-museo img:hover,
+#galeria-exlibris img:hover,
+#galeria-un-vuelo img:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
 
 /* Galerías aparte */
 
@@ -456,6 +575,29 @@ label {
 .distanciar {
     margin-top: 60px;
     margin-bottom: 40px;
+}
+
+.foto-cambio {
+    position: relative;
+}
+
+.foto-cambio img {
+    display: block;
+}
+
+.foto-dorso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.foto-cambio:hover .foto-dorso {
+    opacity: 1;
 }
 
 
@@ -495,4 +637,15 @@ label {
 
 .bloquecito-cv {
     margin-top: 30px;
+}
+
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+
 }
