@@ -209,8 +209,6 @@ header {
     justify-content: center;
     gap: 20px;
     align-items: center;
-    margin-left: 60px;
-    margin-right: 60px;
 }
 
 #info-sobre-mi {
@@ -219,6 +217,17 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.imagen-animada {
+    width: 400px;
+    height: 400px;
+    background-image: url("img/home/ilustracion-emi.png");
+    background-size: cover;
+}
+
+.imagen-animada:hover {
+    background-image: url("img/home/gif-emi.gif");
 }
 
 
@@ -647,5 +656,20 @@ label {
 /* Responsive */
 
 @media screen and (max-width: 600px) {
+
+#nav {
+    height: auto;
+}
+
+#botonera {
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+#fotonav {
+    align-items: center;
+}
 
 }
