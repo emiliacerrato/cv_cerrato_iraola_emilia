@@ -843,23 +843,297 @@ input[type="checkbox"]:focus-visible {
 
 
 
+
+
+
+
 /* Responsive */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
+
+
+/* Generales */
+
+.estilo-uno {
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+.estilo-dos {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.estilo-tres {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.estilo-cuatro {
+    font-size: 1.8rem;
+}
+
+.estilo-cinco {
+    font-size: 2rem;
+}
+
+.estilo-seis {
+    font-size: 0.8rem;
+}
+
+.estilo-siete {
+    font-size: 1rem;
+}
+
+.estilo-ocho {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.botones {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+} 
+
+.mayusculas {
+    font-size: 0.8rem;
+}
+    
+
+/* Nav */    
 
 #nav {
-    height: auto;
+    height: 80px;
 }
 
 #botonera {
     flex-direction: column;
-    justify-content: center;
     width: auto;
     height: auto;
 }
 
-#fotonav {
+.botonesnav {
+    font-size: 13px;
+}
+
+.botonpaginaactual {
+    font-size: 13px;
+    padding: 0px;
+}
+
+
+
+/* Footer */
+
+footer {
+    height: auto;
+    flex-direction: column;
+}
+
+#derechos-emilia {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+#info-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.bloquecitos-info {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+
+
+/* Formulario */
+
+
+#fondo-forms {
+    margin: 2px;
+    background-repeat: repeat;
+    height: auto;
+}
+
+form {
+    height: 100%;
+    width: 65%;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#campos-completar {
+    flex-direction: column;
+}
+
+.columnas-forms {
+    width: 100%;
+}
+
+input {
+    font-size: 0.9rem;
+}
+
+
+textarea {
+    height: 10vh;
+    width: 80%;
+    padding: 10px;
+}
+
+label {
+    font-size: 0.9rem;
+}
+
+#titulos-forms {
+    font-size: 0.9rem;
+}
+
+.mayusculas {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.checkbox {
+    flex-direction: column;
+    gap: 0px;
+}
+
+
+
+/* Home */
+
+
+/* Botón fijo */
+
+.boton-fijo {
+    font-size: 1.3rem;
+    bottom: 25px;
+    right: 25px;
+}
+
+
+
+/* Hero home */
+
+#hero-fondo {
+    background-size: auto 95%;
+    padding: 10px;
+    height: 250px;
+}
+
+#textos-hero {
+    height: 50%;
+    margin-left: 20px;
+    align-content: left;
+}
+
+.flor-roja {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Sobre mi */
+
+#sobre-mi {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
+}
+
+#info-sobre-mi {
+    height: auto;
+    width: 65%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.imagen-animada {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+/* Desplegables general*/
+
+.desplegable-cerrado {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.desplegable-abierto {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* Softwares */
+
+#softwares {
+    background-color: #FAE0EC;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+.apartadito-programa {
+    height: 85px;
+    width: 200px;
+}
+
+
+
+/* Habilidades */
+
+#habilidades {
+    background-color: #D1E1D5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.apartadito-habilidad {
+    height: 80px;
+    width: 170px;
+}
+
+
+
+/* Mis trabajos home */
+
+#mis-trabajos {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#info-mis-trabajos {
+    margin-left: 20px;
+    height: auto;
+    width: 65%;
+    margin-bottom: 15px;
+}
+
+#fotos-trabajos-home {
+    margin-right: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 }
