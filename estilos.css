@@ -839,6 +839,83 @@ input[type="checkbox"]:focus-visible {
 }
 
 
+/* Página sobre mí */
+
+/* Primera parte */
+
+#emilia {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px;
+}
+
+#sobre-mi-emilia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+    width: 30%;
+    margin-top: 40px;
+}
+
+.foto-emilia {
+    overflow: hidden;
+}
+
+.foto-emilia img {
+    transition: transform 0.4s ease;
+}
+
+.foto-emilia img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Segunda parte */
+
+#mis-cosas {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#columnas-mis-cosas-derecha {
+    width: 30%;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 4px solid #E765A2;
+    padding-left: 50px;
+}
+
+iframe {
+    margin-top: 10px;
+}
+
+#columnas-mis-cosas-izquierda {
+    width: 25%;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#articulo-arriba {
+    border-bottom: 4px solid #E765A2;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
 
 
 
